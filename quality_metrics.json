@@ -1,0 +1,57 @@
+{
+  "rows": 15,
+  "columns": 11,
+  "missing_cells": 0,
+  "duplicate_rows": 0,
+  "duplicate_customer_ids": 0,
+  "churned": 7,
+  "churn_rate_pct": 46.7,
+  "outlier_screening_iqr": {
+    "Age": {
+      "q1": 30.0,
+      "q3": 47.0,
+      "iqr": 17.0,
+      "lower": 4.5,
+      "upper": 72.5,
+      "flagged_count": 0,
+      "flagged_values": []
+    },
+    "TenureMonths": {
+      "q1": 7.0,
+      "q3": 27.0,
+      "iqr": 20.0,
+      "lower": -23.0,
+      "upper": 57.0,
+      "flagged_count": 0,
+      "flagged_values": []
+    },
+    "MonthlyCharges": {
+      "q1": 49.99,
+      "q3": 114.99000000000001,
+      "iqr": 65.0,
+      "lower": -47.51,
+      "upper": 212.49,
+      "flagged_count": 0,
+      "flagged_values": []
+    },
+    "TotalCharges": {
+      "q1": 449.90999999999997,
+      "q3": 3209.73,
+      "iqr": 2759.82,
+      "lower": -3689.8200000000006,
+      "upper": 7349.460000000001,
+      "flagged_count": 0,
+      "flagged_values": []
+    },
+    "SupportTickets": {
+      "q1": 1.0,
+      "q3": 4.0,
+      "iqr": 3.0,
+      "lower": -3.5,
+      "upper": 8.5,
+      "flagged_count": 0,
+      "flagged_values": []
+    }
+  },
+  "total_charges_formula_mismatches_tolerance_0.02": 0
+}

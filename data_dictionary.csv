@@ -1,0 +1,12 @@
+column,data_type,meaning,quality_rule
+CustomerID,Text / identifier,Synthetic unique customer identifier,Do not aggregate as a numeric measure; check uniqueness.
+Gender,Categorical,Gender category supplied in sample,Check category consistency; avoid unsupported interpretation.
+Age,Integer,Customer age in years,"Check plausible range; IQR outliers reviewed, not automatically deleted."
+TenureMonths,Integer,Completed months since signup,Must be non-negative.
+SubscriptionType,Categorical,"Basic, Pro, or Enterprise subscription",Check allowed labels.
+MonthlyCharges,Decimal (INR),Fictional monthly subscription charge,Must be non-negative.
+TotalCharges,Decimal (INR),Fictional accumulated charges,Check non-negative and consistency with tenure × monthly charge.
+ContractType,Categorical,"Month-to-Month, One Year, or Two Year",Check allowed labels.
+SupportTickets,Integer,Support tickets in the supplied record,Must be non-negative; counts should be integers.
+PaymentMethod,Categorical,Payment method category,Check category consistency.
+Churn,Categorical (Yes/No),Whether the customer churned in the observation period,Only Yes/No accepted.
